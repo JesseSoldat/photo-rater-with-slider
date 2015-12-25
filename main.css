@@ -1,13 +1,16 @@
-body {
-  
-
+#pageWrapper {
+  width: 800px;
+}
+#count {
+  font-weight: bolder;
 }
 
 #appWrapper {
-  width: 600px;
+  width: 70%;
   margin: 0 auto;
-
+  float: left;
 }
+
 #imgWrapper {
   text-align: center;
   width: 400px;
@@ -22,4 +25,11 @@ body {
 #formWrapper {
   width: 200px;
   margin: 0 auto;
+}
+#right {
+  float: right;
+  width: 20%;
+}
+#anchor {
+  margin-top: 100px;
 }

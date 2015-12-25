@@ -5,22 +5,27 @@
   <link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
-<div id="appWrapper">
+<div id="pageWrapper">
 
-  <div id="imgWrapper">
-    <h2>Magazine Rater</h2>
-    <span><img id="imgArray" src=""></img></span>
-    <br>
-    <span id="count"></span>
+  <div id="appWrapper">
+    <div id="imgWrapper">
+      <h2>Magazine Rater</h2>
+      <span><img id="imgArray" src=""></img></span>
+      <br>
+      <h1><span id="count"></span></h1>
+    </div>
+
+    <div id="formWrapper">
+      <input id="range" type="range" min="0" max="100" value"50" step="5" onChange="sliderChange(this.value)"/>
+      <br><br>
+      <h3>Your rating is: <span id="rating">50</span></h3>
+      <button id="btn" onclick="submit()">Rate</button>
+    </div>
   </div>
 
-  <div id="formWrapper">
-    <input id="range" type="range" min="0" max="100" value"50" step="5" onChange="sliderChange(this.value)"/>
-    <br><br>
-    <h3>Your rating is: <span id="rating">50</span></h3>
-    <button id="btn" onclick="submit()">Rate</button>
+  <div id="right">
+      <ul id="anchor"></ul>
   </div>
-
 </div>
 
 
