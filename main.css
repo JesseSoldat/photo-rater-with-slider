@@ -1,5 +1,25 @@
+body {
+  
 
+}
+
+#appWrapper {
+  width: 600px;
+  margin: 0 auto;
+
+}
+#imgWrapper {
+  text-align: center;
+  width: 400px;
+  height: 500px;
+  margin: 0 auto;
+
+}
 #imgArray {
+  max-width: 300px;
+  max-height: 400px;
+}
+#formWrapper {
   width: 200px;
-  height: 250px;
+  margin: 0 auto;
 }
