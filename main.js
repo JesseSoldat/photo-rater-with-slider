@@ -39,10 +39,8 @@ function next(){
 
       }, 5000); 
       return
-    }
-    
+    }  
 }
-
 
 btn.addEventListener('click', submit);
 
@@ -51,17 +49,20 @@ var sliderChange = function (value) {
   rating.innerHTML = value;
 
 }
+
+var array2 = ['Yellowstone','France','Dolphins','Afghanistan','Animal Minds','Inca','Solar System'];
+var a = 0;
+
 var submit = function() {
  
-    console.log(range.value);
-    console.log(images.src);
-    var imgName = images.src.slice(-6, -4);
-    console.log(imgName);
+    // var imgName = images.src.slice(-6, -4);
+ 
     var element = document.createElement('h3');
-    element.setAttribute("style", "margin-top: 20px; font-size:2em;");
-    var text = document.createTextNode(imgName+": "+ range.value);
+    element.setAttribute("style", "margin-top: 20px;");
+    var text = document.createTextNode(array2[a]+": "+ range.value);
     element.appendChild(text);
     anchor.appendChild(element);
+    a++;
 
  next();
 }
